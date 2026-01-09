@@ -1,3 +1,5 @@
+Added alpine js otherwise this is the standard app. 
+
 # Astro Starter Kit: Basics
 
 ```sh
