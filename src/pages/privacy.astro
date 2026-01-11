@@ -1,0 +1,394 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Privacy Policy - No Sheet Sherlock" description="Privacy Policy for No Sheet Sherlock Google Sheets add-on">
+	<header class="header">
+		<nav class="nav">
+			<div class="nav-container">
+				<a href="/" class="logo-container">
+					<div class="logo-placeholder">🔍</div>
+					<span class="logo-text">No Sheet Sherlock</span>
+				</a>
+				<div class="nav-links">
+					<a href="/#features">Features</a>
+					<a href="/#how-it-works">How It Works</a>
+					<a href="/privacy">Privacy</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="privacy-main">
+		<div class="container">
+			<h1>Privacy Policy</h1>
+			<p class="last-updated">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+
+			<section>
+				<h2>Introduction</h2>
+				<p>
+					No Sheet Sherlock ("we", "our", or "us") is committed to protecting your privacy.
+					This Privacy Policy explains how we collect, use, disclose, and safeguard your
+					information when you use our Google Sheets add-on.
+				</p>
+			</section>
+
+			<section>
+				<h2>Information We Collect</h2>
+				<h3>Data Processed by the Add-on</h3>
+				<p>
+					No Sheet Sherlock processes data within your Google Sheets documents to provide its
+					functionality. This includes:
+				</p>
+				<ul>
+					<li>Cell values that you explicitly pass to our functions (e.g., <code>=JSON_STRINGIFY(A1)</code>)</li>
+					<li>Data required for the specific function you are using (JSON data, text strings, etc.)</li>
+				</ul>
+				<p>
+					All processing occurs locally within your Google Sheets environment, and we do not
+					store, transmit, or retain any of your spreadsheet data on external servers.
+				</p>
+
+				<h3>Google Account Information</h3>
+				<p>
+					When you install No Sheet Sherlock, Google may provide us with basic account
+					information such as your email address and name, which is standard for Google
+					Workspace Marketplace add-ons.
+				</p>
+
+				<h3>Usage Analytics</h3>
+				<p>
+					We may collect anonymous usage statistics to improve the add-on, such as which
+					functions are used most frequently. This data does not include any of your
+					spreadsheet content or personal information.
+				</p>
+			</section>
+
+			<section>
+				<h2>How We Use Your Information</h2>
+				<p>We use the information we collect to:</p>
+				<ul>
+					<li>Provide and maintain the add-on's functionality</li>
+					<li>Process your data as requested through our functions</li>
+					<li>Improve and optimize the add-on's performance</li>
+					<li>Send important updates or notifications about the add-on (if applicable)</li>
+					<li>Respond to your inquiries or support requests</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Data Storage and Security</h2>
+				<p>
+					No Sheet Sherlock processes all data locally within Google Sheets. We do not store
+					your spreadsheet data on external servers. All processing occurs within Google's
+					secure infrastructure.
+				</p>
+				<p>
+					We implement appropriate technical and organizational measures to protect your
+					information, though no method of transmission over the internet is 100% secure.
+				</p>
+			</section>
+
+			<section>
+				<h2>Data Sharing and Disclosure</h2>
+				<p>
+					We do not sell, trade, or otherwise transfer your personal information or
+					spreadsheet data to third parties. We may share information only in the following
+					circumstances:
+				</p>
+				<ul>
+					<li>To comply with legal obligations or respond to lawful requests</li>
+					<li>To protect our rights, privacy, safety, or property</li>
+					<li>With your explicit consent</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Google APIs</h2>
+				<p>
+					No Sheet Sherlock's use of information received from Google APIs adheres to the
+					<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>,
+					including the Limited Use requirements.
+				</p>
+			</section>
+
+			<section>
+				<h2>Your Rights and Choices</h2>
+				<p>You have the right to:</p>
+				<ul>
+					<li>Uninstall the add-on at any time through Google Sheets settings</li>
+					<li>Request information about what data we process</li>
+					<li>Request deletion of any stored information (if applicable)</li>
+					<li>Opt out of non-essential communications</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Children's Privacy</h2>
+				<p>
+					No Sheet Sherlock is not intended for children under the age of 13. We do not
+					knowingly collect personal information from children under 13. If you believe we
+					have collected information from a child under 13, please contact us immediately.
+				</p>
+			</section>
+
+			<section>
+				<h2>Changes to This Privacy Policy</h2>
+				<p>
+					We may update this Privacy Policy from time to time. We will notify you of any
+					material changes by posting the new Privacy Policy on this page and updating the
+					"Last updated" date. You are advised to review this Privacy Policy periodically
+					for any changes.
+				</p>
+			</section>
+
+			<section>
+				<h2>Contact Us</h2>
+				<p>
+					If you have any questions about this Privacy Policy, please contact us through the
+					Google Workspace Marketplace listing or via the contact information provided in
+					the add-on's description.
+				</p>
+			</section>
+
+			<section>
+				<h2>Compliance</h2>
+				<p>
+					This Privacy Policy is designed to comply with applicable data protection laws,
+					including GDPR, CCPA, and other relevant regulations. If you are located in the
+					European Economic Area (EEA), you have certain data protection rights under GDPR.
+				</p>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<a href="/" class="logo-container">
+						<div class="logo-placeholder">🔍</div>
+						<span class="logo-text">No Sheet Sherlock</span>
+					</a>
+				</div>
+				<div class="footer-links">
+					<a href="/privacy">Privacy Policy</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; {new Date().getFullYear()} No Sheet Sherlock. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</Layout>
+
+<style>
+	.header {
+		background: #ffffff;
+		border-bottom: 1px solid #e5e7eb;
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	.nav {
+		padding: 1rem 0;
+	}
+
+	.nav-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-container {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: #1f2937;
+		text-decoration: none;
+	}
+
+	.logo-placeholder {
+		font-size: 2rem;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f3f4f6;
+		border-radius: 8px;
+	}
+
+	.logo-text {
+		font-weight: 700;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.nav-links a {
+		color: #4b5563;
+		font-weight: 500;
+		transition: color 0.2s;
+	}
+
+	.nav-links a:hover {
+		color: #2563eb;
+	}
+
+	.privacy-main {
+		padding: 4rem 0;
+		background: #ffffff;
+		min-height: calc(100vh - 200px);
+	}
+
+	.privacy-main .container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.privacy-main h1 {
+		font-size: 2.5rem;
+		font-weight: 800;
+		margin: 0 0 0.5rem;
+		color: #1f2937;
+	}
+
+	.last-updated {
+		color: #6b7280;
+		font-size: 0.875rem;
+		margin: 0 0 3rem;
+	}
+
+	.privacy-main section {
+		margin-bottom: 3rem;
+	}
+
+	.privacy-main h2 {
+		font-size: 1.75rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: #1f2937;
+		padding-top: 1rem;
+	}
+
+	.privacy-main h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin: 1.5rem 0 0.75rem;
+		color: #374151;
+	}
+
+	.privacy-main p {
+		color: #4b5563;
+		line-height: 1.7;
+		margin: 0 0 1rem;
+	}
+
+	.privacy-main ul {
+		color: #4b5563;
+		line-height: 1.7;
+		margin: 0 0 1.5rem;
+		padding-left: 1.5rem;
+	}
+
+	.privacy-main li {
+		margin-bottom: 0.5rem;
+	}
+
+	.privacy-main code {
+		background: #f3f4f6;
+		padding: 0.125rem 0.375rem;
+		border-radius: 0.25rem;
+		font-family: 'Monaco', 'Courier New', monospace;
+		font-size: 0.9em;
+		color: #1f2937;
+	}
+
+	.privacy-main a {
+		color: #2563eb;
+		text-decoration: underline;
+	}
+
+	.footer {
+		background: #1f2937;
+		color: #9ca3af;
+		padding: 3rem 0 1.5rem;
+		margin-top: 4rem;
+	}
+
+	.footer .container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.footer-brand .logo-container {
+		color: white;
+	}
+
+	.footer-brand .logo-placeholder {
+		background: #374151;
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.footer-links a {
+		color: #9ca3af;
+	}
+
+	.footer-links a:hover {
+		color: white;
+	}
+
+	.footer-bottom {
+		border-top: 1px solid #374151;
+		padding-top: 1.5rem;
+		text-align: center;
+		font-size: 0.875rem;
+	}
+
+	@media (max-width: 768px) {
+		.nav-container {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.nav-links {
+			gap: 1.5rem;
+		}
+
+		.privacy-main h1 {
+			font-size: 2rem;
+		}
+
+		.footer-content {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+</style>
+

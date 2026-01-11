@@ -1,32 +1,543 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<header class="header">
+		<nav class="nav">
+			<div class="nav-container">
+				<div class="logo-container">
+					<!-- Logo placeholder - replace with your logo -->
+					<div class="logo-placeholder">🔍</div>
+					<span class="logo-text">No Sheet Sherlock</span>
+				</div>
+				<div class="nav-links">
+					<a href="#features">Features</a>
+					<a href="#how-it-works">How It Works</a>
+					<a href="/privacy">Privacy</a>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-	<div
-		x-data="{ count: 0 }"
-		style="display:flex;align-items:center;gap:0.75rem;margin-top:1.5rem;"
-	>
-		<button
-			@click="count--"
-			style="padding:0.5rem 0.75rem;border-radius:0.5rem;border:1px solid #e5e7eb;cursor:pointer;"
-		>
-			-
-		</button>
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<h1 class="hero-title">
+					No Sheet Sherlock
+					<span class="hero-subtitle">Developer Tools That Actually Make Sense</span>
+				</h1>
+				<p class="hero-description">
+					Tired of manually wrestling with JSON, encoding, and text processing in Google
+					Sheets? We've got a solution that's elementary, my dear spreadsheet user.
+				</p>
+				<div class="cta-buttons">
+					<a
+						href="https://workspace.google.com/marketplace"
+						class="btn btn-primary"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Install from Workspace Marketplace
+					</a>
+					<a href="#features" class="btn btn-secondary">See What It Does</a>
+				</div>
+			</div>
+		</section>
 
-		<span style="min-width:3rem;text-align:center;font-weight:600;" x-text="count"></span>
+		<section id="features" class="features">
+			<div class="container">
+				<h2 class="section-title">The Detective's Toolkit</h2>
+				<p class="section-subtitle">
+					Powerful functions that transform Google Sheets into a developer's best friend
+				</p>
 
-		<button
-			@click="count++"
-			style="padding:0.5rem 0.75rem;border-radius:0.5rem;border:1px solid #e5e7eb;cursor:pointer;"
-		>
-			+
-		</button>
-	</div>
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon">📦</div>
+						<h3>JSON Operations</h3>
+						<p>
+							<strong>JSON.stringify</strong> and <strong>JSON.flatten</strong> to
+							convert, structure, and destructure your data with ease. No more copy-paste
+							into external tools.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">🔗</div>
+						<h3>Slugify</h3>
+						<p>
+							Transform any text into URL-friendly slugs. Perfect for generating clean,
+							readable identifiers from messy data.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">🧹</div>
+						<h3>Strip HTML</h3>
+						<p>
+							Remove HTML tags from your cells in a flash. Clean data, clean sheets, clean
+							conscience.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">🔐</div>
+						<h3>Base64 Encode/Decode</h3>
+						<p>
+							Encode and decode Base64 strings directly in your spreadsheet. Because
+							encoding shouldn't require a PhD in cryptography.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">📏</div>
+						<h3>Levenshtein Distance</h3>
+						<p>
+							Calculate string similarity and find fuzzy matches. Discover relationships in
+							your data that were hiding in plain sight.
+						</p>
+					</div>
+
+					<div class="feature-card">
+						<div class="feature-icon">⚡</div>
+						<h3>And More</h3>
+						<p>
+							We're constantly adding new functions based on what developers actually need.
+							Your workflow problems, solved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="how-it-works" class="how-it-works">
+			<div class="container">
+				<h2 class="section-title">Elementary, My Dear User</h2>
+				<p class="section-subtitle">Three simple steps to spreadsheet enlightenment</p>
+
+				<div class="steps">
+					<div class="step">
+						<div class="step-number">1</div>
+						<h3>Install</h3>
+						<p>Add No Sheet Sherlock from the Google Workspace Marketplace</p>
+					</div>
+
+					<div class="step">
+						<div class="step-number">2</div>
+						<h3>Use Functions</h3>
+						<p>Start using functions like <code>=JSON_STRINGIFY(A1)</code> or <code>=SLUGIFY(B2)</code> right in your cells</p>
+					</div>
+
+					<div class="step">
+						<div class="step-number">3</div>
+						<h3>Revel in Your Genius</h3>
+						<p>Watch your data transform while your colleagues wonder how you became so productive</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta-section">
+			<div class="container">
+				<h2>Ready to Solve Your Spreadsheet Mysteries?</h2>
+				<p>Join the developers who refuse to accept "it can't be done" as an answer</p>
+				<a
+					href="https://workspace.google.com/marketplace"
+					class="btn btn-primary btn-large"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Get Started Free
+				</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<div class="logo-container">
+						<div class="logo-placeholder">🔍</div>
+						<span class="logo-text">No Sheet Sherlock</span>
+					</div>
+				</div>
+				<div class="footer-links">
+					<a href="/privacy">Privacy Policy</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; {new Date().getFullYear()} No Sheet Sherlock. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
 </Layout>
+
+<style>
+	.header {
+		background: #ffffff;
+		border-bottom: 1px solid #e5e7eb;
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	.nav {
+		padding: 1rem 0;
+	}
+
+	.nav-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo-container {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: #1f2937;
+	}
+
+	.logo-placeholder {
+		font-size: 2rem;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #f3f4f6;
+		border-radius: 8px;
+	}
+
+	.logo-text {
+		font-weight: 700;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	.nav-links a {
+		color: #4b5563;
+		font-weight: 500;
+		transition: color 0.2s;
+	}
+
+	.nav-links a:hover {
+		color: #2563eb;
+	}
+
+	.hero {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		padding: 6rem 2rem;
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.hero-title {
+		font-size: 3.5rem;
+		font-weight: 800;
+		margin: 0 0 1rem;
+		line-height: 1.2;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.hero-subtitle {
+		font-size: 1.5rem;
+		font-weight: 400;
+		opacity: 0.95;
+	}
+
+	.hero-description {
+		font-size: 1.25rem;
+		margin: 2rem 0 3rem;
+		opacity: 0.95;
+		line-height: 1.7;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.875rem 2rem;
+		border-radius: 0.5rem;
+		font-weight: 600;
+		font-size: 1rem;
+		text-decoration: none;
+		transition: all 0.2s;
+		cursor: pointer;
+		border: none;
+	}
+
+	.btn-primary {
+		background: #ffffff;
+		color: #667eea;
+	}
+
+	.btn-primary:hover {
+		background: #f9fafb;
+		transform: translateY(-2px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-secondary {
+		background: rgba(255, 255, 255, 0.2);
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn-secondary:hover {
+		background: rgba(255, 255, 255, 0.3);
+	}
+
+	.btn-large {
+		padding: 1.125rem 2.5rem;
+		font-size: 1.125rem;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.features {
+		padding: 6rem 0;
+		background: #f9fafb;
+	}
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 800;
+		text-align: center;
+		margin: 0 0 1rem;
+		color: #1f2937;
+	}
+
+	.section-subtitle {
+		text-align: center;
+		font-size: 1.25rem;
+		color: #6b7280;
+		margin: 0 0 4rem;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+	}
+
+	.feature-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 1rem;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: #1f2937;
+	}
+
+	.feature-card p {
+		color: #4b5563;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.feature-card code {
+		background: #f3f4f6;
+		padding: 0.125rem 0.375rem;
+		border-radius: 0.25rem;
+		font-family: 'Monaco', 'Courier New', monospace;
+		font-size: 0.9em;
+	}
+
+	.how-it-works {
+		padding: 6rem 0;
+		background: white;
+	}
+
+	.steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 3rem;
+		margin-top: 3rem;
+	}
+
+	.step {
+		text-align: center;
+	}
+
+	.step-number {
+		width: 60px;
+		height: 60px;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		font-weight: 800;
+		margin: 0 auto 1.5rem;
+	}
+
+	.step h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 0 1rem;
+		color: #1f2937;
+	}
+
+	.step p {
+		color: #6b7280;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.step code {
+		background: #f3f4f6;
+		padding: 0.125rem 0.375rem;
+		border-radius: 0.25rem;
+		font-family: 'Monaco', 'Courier New', monospace;
+		font-size: 0.9em;
+	}
+
+	.cta-section {
+		padding: 6rem 0;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.cta-section h2 {
+		font-size: 2.5rem;
+		font-weight: 800;
+		margin: 0 0 1rem;
+	}
+
+	.cta-section p {
+		font-size: 1.25rem;
+		margin: 0 0 2.5rem;
+		opacity: 0.95;
+	}
+
+	.footer {
+		background: #1f2937;
+		color: #9ca3af;
+		padding: 3rem 0 1.5rem;
+	}
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	.footer-brand .logo-container {
+		color: white;
+	}
+
+	.footer-brand .logo-placeholder {
+		background: #374151;
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.footer-links a {
+		color: #9ca3af;
+	}
+
+	.footer-links a:hover {
+		color: white;
+	}
+
+	.footer-bottom {
+		border-top: 1px solid #374151;
+		padding-top: 1.5rem;
+		text-align: center;
+		font-size: 0.875rem;
+	}
+
+	@media (max-width: 768px) {
+		.hero-title {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+
+		.hero-description {
+			font-size: 1.125rem;
+		}
+
+		.nav-container {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.nav-links {
+			gap: 1.5rem;
+		}
+
+		.section-title {
+			font-size: 2rem;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.steps {
+			grid-template-columns: 1fr;
+		}
+
+		.footer-content {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+</style>
