@@ -1,16 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import smallLogo from '../assets/small_logo.png';
 ---
 
 <Layout>
 	<header class="header">
 		<nav class="nav">
 			<div class="nav-container">
-				<div class="logo-container">
-					<!-- Logo placeholder - replace with your logo -->
-					<div class="logo-placeholder">🔍</div>
+				<a href="/" class="logo-container">
+					<img src={smallLogo.src} alt="No Sheet Sherlock" class="logo-image" />
 					<span class="logo-text">No Sheet Sherlock</span>
-				</div>
+				</a>
 				<div class="nav-links">
 					<a href="#features">Features</a>
 					<a href="#how-it-works">How It Works</a>
@@ -158,10 +158,10 @@ import Layout from '../layouts/Layout.astro';
 		<div class="container">
 			<div class="footer-content">
 				<div class="footer-brand">
-					<div class="logo-container">
-						<div class="logo-placeholder">🔍</div>
+					<a href="/" class="logo-container">
+						<img src={smallLogo.src} alt="No Sheet Sherlock" class="logo-image" />
 						<span class="logo-text">No Sheet Sherlock</span>
-					</div>
+					</a>
 				</div>
 				<div class="footer-links">
 					<a href="/privacy">Privacy Policy</a>
@@ -204,17 +204,14 @@ import Layout from '../layouts/Layout.astro';
 		font-weight: 700;
 		font-size: 1.25rem;
 		color: #1f2937;
+		text-decoration: none;
 	}
 
-	.logo-placeholder {
-		font-size: 2rem;
-		width: 40px;
+	.logo-image {
 		height: 40px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: #f3f4f6;
-		border-radius: 8px;
+		width: auto;
+		display: block;
+		background: transparent;
 	}
 
 	.logo-text {
@@ -475,10 +472,6 @@ import Layout from '../layouts/Layout.astro';
 
 	.footer-brand .logo-container {
 		color: white;
-	}
-
-	.footer-brand .logo-placeholder {
-		background: #374151;
 	}
 
 	.footer-links {

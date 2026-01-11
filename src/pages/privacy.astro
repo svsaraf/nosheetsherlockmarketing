@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import smallLogo from '../assets/small_logo.png';
 ---
 
 <Layout title="Privacy Policy - No Sheet Sherlock" description="Privacy Policy for No Sheet Sherlock Google Sheets add-on">
@@ -7,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
 		<nav class="nav">
 			<div class="nav-container">
 				<a href="/" class="logo-container">
-					<div class="logo-placeholder">🔍</div>
+					<img src={smallLogo.src} alt="No Sheet Sherlock" class="logo-image" />
 					<span class="logo-text">No Sheet Sherlock</span>
 				</a>
 				<div class="nav-links">
@@ -167,7 +168,7 @@ import Layout from '../layouts/Layout.astro';
 			<div class="footer-content">
 				<div class="footer-brand">
 					<a href="/" class="logo-container">
-						<div class="logo-placeholder">🔍</div>
+						<img src={smallLogo.src} alt="No Sheet Sherlock" class="logo-image" />
 						<span class="logo-text">No Sheet Sherlock</span>
 					</a>
 				</div>
@@ -215,15 +216,11 @@ import Layout from '../layouts/Layout.astro';
 		text-decoration: none;
 	}
 
-	.logo-placeholder {
-		font-size: 2rem;
-		width: 40px;
+	.logo-image {
 		height: 40px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: #f3f4f6;
-		border-radius: 8px;
+		width: auto;
+		display: block;
+		background: transparent;
 	}
 
 	.logo-text {
@@ -345,10 +342,6 @@ import Layout from '../layouts/Layout.astro';
 
 	.footer-brand .logo-container {
 		color: white;
-	}
-
-	.footer-brand .logo-placeholder {
-		background: #374151;
 	}
 
 	.footer-links {
